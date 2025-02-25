@@ -97,7 +97,7 @@
 
 ### 2.2 硬件通讯框架
 
-![硬件通讯框架图](files\picture\硬件通讯框架.jpg)
+<img src="files\picture\硬件通讯框架.jpg" alt="硬件通讯框架" style="zoom:67%;" />
 
 ## 三、 软件环境
 
@@ -143,29 +143,29 @@
     - 标定时为防止机械臂发生碰撞，尽量将机械臂或工作站移动至相对空旷位置。
     - 使用用户根据机械臂实际安装状态和机械臂末端工作范围自定义点位进行标定，自定义标定点位在设计时需要满足姿态差异明显的要求（机械臂末端在4个自定义标定点位的Z轴不共面），自定义标定点位可以参考机械臂末端Z轴朝上、X轴朝上、X轴朝下和Z轴朝下进行设计。
 
-    ![六维力标定自动](files\picture\六维力标定.png)
+   <img src="files\picture\六维力标定.png" alt="六维力标定" style="zoom:70%;" />
     <center>自动标定</center>
 
-    ![六维力标定手动](files\picture\手动标定图.jpg)
+   <img src="files\picture\手动标定图.jpg" alt="手动标定图" style="zoom:70%;" />
     <center>自动标定</center>
 
 ### 4.3 全局路点设置
 
 **注**：本案例共需设置四个全局路点，分别为Initial点（打磨之前的初始点位）、Point_1点（某次循环打磨中的开始点位）、Point_2点（某次循环打磨中的结束点位）和Point_3点（本次打磨的结束点位）。由于算法基于工具坐标系z轴作为力跟踪+姿态自适应基准线，所以需将末端工具坐标系配置成打磨接触面的法向方向，同时z轴方向指向接触面，如下图所示。
 
-![真实-仿真](files\picture\真实-仿真.png)
+<img src="files\picture\真实-仿真.png" alt="真实-仿真" style="zoom:70%;" />
 
 全局路点具体设置过程如下所示：
 
 1. 进入示教器主页，点击**数据管理**进入数据管理页面，并点击**全局点位**进入全局点位页签，然后点击右上方绿色加号。
 
-    ![全局路点](files\picture\全局路点.png)
+    <img src="files\picture\全局路点.png" alt="全局路点" style="zoom:70%;" />
 
-2. 点击右下方蓝色眼睛图标，打开三维仿真空间便于观察设置的全局路点状态，红色的为目标状态，保存前需点击应用将机械臂移动至相应位置。
+3. 点击右下方蓝色眼睛图标，打开三维仿真空间便于观察设置的全局路点状态，红色的为目标状态，保存前需点击应用将机械臂移动至相应位置。
 
-    ![观察点位状态](files\picture\观察点位状态.png)
+   <img src="files\picture\观察点位状态.png" alt="观察点位状态" style="zoom:70%;" />
 
-3. 点击**新增点位**按钮，完成全局路点命名并保存。
+4. 点击**新增点位**按钮，完成全局路点命名并保存。
 
 ### 4.4 工具坐标系设置
 
@@ -177,7 +177,7 @@
 2. 点击**手动设置**进入手动标定页面。
 3. 填写工具坐标系名称，并根据当前打磨头的实际物理尺寸（长度、直径、安装偏移量等）填写参数，点击**下一步**完成标定。
 
-![工具坐标系手动标定](files\picture\工具坐标系手动标定.png)
+<img src="files\picture\工具坐标系手动标定.png" alt="工具坐标系手动标定" style="zoom:70%;" />
 
 ### 4.5 编程控制
 
@@ -656,9 +656,9 @@ int main() {
 ## 附录：相关资源获取
 
 * [API2接口库](https://develop.realman-robotics.com/zh/robot/download/redevelopment.html)
-* [图形化编程实例下载](files\resource\Sanding_Demo.txt)
-* [Python二次开发API+实例下载](files\resource\demo_python.zip)
+* [图形化编程实例下载](https://github.com/Simo-realman/Autonomous_Grinding_Workstation)
+* [Python二次开发API+实例下载](https://github.com/Simo-realman/Autonomous_Grinding_Workstation)
 * [Python二次开发接口说明](https://develop.realman-robotics.com/zh/robot/api/python/classes/roboticArm.html)
-* [C++二次开发API+实例下载](files\resource\demo_c++.zip)
+* [C++二次开发API+实例下载](https://github.com/Simo-realman/Autonomous_Grinding_Workstation)
 * [C++二次开发接口说明](https://develop.realman-robotics.com/zh/robot/api/c/classes/roboticArm.html)
 * [用户手册](https://develop.realman-robotics.com/zh/robot/download/userManual.html)
